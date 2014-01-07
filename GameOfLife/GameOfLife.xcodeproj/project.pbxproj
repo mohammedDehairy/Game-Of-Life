@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E4C011F1878A90C0072419C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4C011E1878A90C0072419C /* ImageIO.framework */; };
+		6E4C01211878A9180072419C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4C01201878A9180072419C /* MobileCoreServices.framework */; };
+		6E4C01261878A9530072419C /* AnimatedGifCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C01251878A9530072419C /* AnimatedGifCreator.m */; };
+		6EC23045187713F60010634A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC23044187713F60010634A /* Foundation.framework */; };
+		6EC23047187713F60010634A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC23046187713F60010634A /* CoreGraphics.framework */; };
+		6EC23049187713F60010634A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC23048187713F60010634A /* UIKit.framework */; };
+		6EC2304F187713F60010634A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EC2304D187713F60010634A /* InfoPlist.strings */; };
+		6EC23051187713F60010634A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23050187713F60010634A /* main.m */; };
+		6EC23055187713F60010634A /* GameOfLifeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23054187713F60010634A /* GameOfLifeAppDelegate.m */; };
+		6EC23057187713F70010634A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC23056187713F70010634A /* Images.xcassets */; };
+		6EC2305E187713F70010634A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC2305D187713F70010634A /* XCTest.framework */; };
+		6EC2305F187713F70010634A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC23044187713F60010634A /* Foundation.framework */; };
+		6EC23060187713F70010634A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC23048187713F60010634A /* UIKit.framework */; };
+		6EC23068187713F70010634A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EC23066187713F70010634A /* InfoPlist.strings */; };
+		6EC2306A187713F70010634A /* GameOfLifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23069187713F70010634A /* GameOfLifeTests.m */; };
+		6EC23077187714370010634A /* GameOfLifeControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23076187714370010634A /* GameOfLifeControllerViewController.m */; };
+		6EC2307D1877147C0010634A /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC2307C1877147C0010634A /* Graph.m */; };
+		6EC23081187714940010634A /* GraphCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23080187714940010634A /* GraphCell.m */; };
+		6EC23085187714BA0010634A /* PositionEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23084187714BA0010634A /* PositionEntity.m */; };
+		6EC23089187716060010634A /* MSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23088187716060010634A /* MSize.m */; };
+		6EC2308E187719520010634A /* MatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC2308D187719520010634A /* MatrixView.m */; };
+		6EC23092187719650010634A /* CellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23091187719650010634A /* CellView.m */; };
+		6EC23097187735F50010634A /* ActionOnGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23096187735F50010634A /* ActionOnGraph.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EC23061187713F70010634A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EC23039187713F60010634A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EC23040187713F60010634A;
+			remoteInfo = GameOfLife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E4C011E1878A90C0072419C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		6E4C01201878A9180072419C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6E4C01241878A9530072419C /* AnimatedGifCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedGifCreator.h; sourceTree = "<group>"; };
+		6E4C01251878A9530072419C /* AnimatedGifCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedGifCreator.m; sourceTree = "<group>"; };
+		6EC23041187713F60010634A /* GameOfLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC23044187713F60010634A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6EC23046187713F60010634A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6EC23048187713F60010634A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6EC2304C187713F60010634A /* GameOfLife-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameOfLife-Info.plist"; sourceTree = "<group>"; };
+		6EC2304E187713F60010634A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6EC23050187713F60010634A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6EC23052187713F60010634A /* GameOfLife-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameOfLife-Prefix.pch"; sourceTree = "<group>"; };
+		6EC23053187713F60010634A /* GameOfLifeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameOfLifeAppDelegate.h; sourceTree = "<group>"; };
+		6EC23054187713F60010634A /* GameOfLifeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeAppDelegate.m; sourceTree = "<group>"; };
+		6EC23056187713F70010634A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6EC2305C187713F70010634A /* GameOfLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC2305D187713F70010634A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6EC23065187713F70010634A /* GameOfLifeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameOfLifeTests-Info.plist"; sourceTree = "<group>"; };
+		6EC23067187713F70010634A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6EC23069187713F70010634A /* GameOfLifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeTests.m; sourceTree = "<group>"; };
+		6EC23075187714370010634A /* GameOfLifeControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOfLifeControllerViewController.h; sourceTree = "<group>"; };
+		6EC23076187714370010634A /* GameOfLifeControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeControllerViewController.m; sourceTree = "<group>"; };
+		6EC2307B1877147C0010634A /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		6EC2307C1877147C0010634A /* Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graph.m; sourceTree = "<group>"; };
+		6EC2307F187714940010634A /* GraphCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphCell.h; sourceTree = "<group>"; };
+		6EC23080187714940010634A /* GraphCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphCell.m; sourceTree = "<group>"; };
+		6EC23083187714BA0010634A /* PositionEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionEntity.h; sourceTree = "<group>"; };
+		6EC23084187714BA0010634A /* PositionEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionEntity.m; sourceTree = "<group>"; };
+		6EC23087187716060010634A /* MSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSize.h; sourceTree = "<group>"; };
+		6EC23088187716060010634A /* MSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSize.m; sourceTree = "<group>"; };
+		6EC2308C187719520010634A /* MatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixView.h; sourceTree = "<group>"; };
+		6EC2308D187719520010634A /* MatrixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixView.m; sourceTree = "<group>"; };
+		6EC23090187719650010634A /* CellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellView.h; sourceTree = "<group>"; };
+		6EC23091187719650010634A /* CellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellView.m; sourceTree = "<group>"; };
+		6EC23095187735F50010634A /* ActionOnGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionOnGraph.h; sourceTree = "<group>"; };
+		6EC23096187735F50010634A /* ActionOnGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionOnGraph.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EC2303E187713F60010634A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4C01211878A9180072419C /* MobileCoreServices.framework in Frameworks */,
+				6E4C011F1878A90C0072419C /* ImageIO.framework in Frameworks */,
+				6EC23047187713F60010634A /* CoreGraphics.framework in Frameworks */,
+				6EC23049187713F60010634A /* UIKit.framework in Frameworks */,
+				6EC23045187713F60010634A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EC23059187713F70010634A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC2305E187713F70010634A /* XCTest.framework in Frameworks */,
+				6EC23060187713F70010634A /* UIKit.framework in Frameworks */,
+				6EC2305F187713F70010634A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E4C01221878A9280072419C /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				6E4C01231878A9310072419C /* AnimatedGifCreator */,
+			);
+			name = HelperClasses;
+			sourceTree = "<group>";
+		};
+		6E4C01231878A9310072419C /* AnimatedGifCreator */ = {
+			isa = PBXGroup;
+			children = (
+				6E4C01241878A9530072419C /* AnimatedGifCreator.h */,
+				6E4C01251878A9530072419C /* AnimatedGifCreator.m */,
+			);
+			name = AnimatedGifCreator;
+			sourceTree = "<group>";
+		};
+		6EC23038187713F60010634A = {
+			isa = PBXGroup;
+			children = (
+				6EC23093187721090010634A /* Classes */,
+				6EC2304A187713F60010634A /* GameOfLife AppDelegate */,
+				6EC23063187713F70010634A /* GameOfLifeTests */,
+				6EC23043187713F60010634A /* Frameworks */,
+				6EC23042187713F60010634A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6EC23042187713F60010634A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23041187713F60010634A /* GameOfLife.app */,
+				6EC2305C187713F70010634A /* GameOfLifeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EC23043187713F60010634A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E4C01201878A9180072419C /* MobileCoreServices.framework */,
+				6E4C011E1878A90C0072419C /* ImageIO.framework */,
+				6EC23044187713F60010634A /* Foundation.framework */,
+				6EC23046187713F60010634A /* CoreGraphics.framework */,
+				6EC23048187713F60010634A /* UIKit.framework */,
+				6EC2305D187713F70010634A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EC2304A187713F60010634A /* GameOfLife AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23053187713F60010634A /* GameOfLifeAppDelegate.h */,
+				6EC23054187713F60010634A /* GameOfLifeAppDelegate.m */,
+				6EC23056187713F70010634A /* Images.xcassets */,
+				6EC2304B187713F60010634A /* Supporting Files */,
+			);
+			name = "GameOfLife AppDelegate";
+			path = GameOfLife;
+			sourceTree = "<group>";
+		};
+		6EC2304B187713F60010634A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EC2304C187713F60010634A /* GameOfLife-Info.plist */,
+				6EC2304D187713F60010634A /* InfoPlist.strings */,
+				6EC23050187713F60010634A /* main.m */,
+				6EC23052187713F60010634A /* GameOfLife-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EC23063187713F70010634A /* GameOfLifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23069187713F70010634A /* GameOfLifeTests.m */,
+				6EC23064187713F70010634A /* Supporting Files */,
+			);
+			path = GameOfLifeTests;
+			sourceTree = "<group>";
+		};
+		6EC23064187713F70010634A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23065187713F70010634A /* GameOfLifeTests-Info.plist */,
+				6EC23066187713F70010634A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EC23073187714090010634A /* Custom View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23074187714160010634A /* GameOfLifeController */,
+			);
+			name = "Custom View Controllers";
+			sourceTree = "<group>";
+		};
+		6EC23074187714160010634A /* GameOfLifeController */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23075187714370010634A /* GameOfLifeControllerViewController.h */,
+				6EC23076187714370010634A /* GameOfLifeControllerViewController.m */,
+			);
+			name = GameOfLifeController;
+			sourceTree = "<group>";
+		};
+		6EC23078187714440010634A /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23094187735D40010634A /* Action on Graph */,
+				6EC230791877144E0010634A /* Graph Representation */,
+			);
+			name = "Model Classes";
+			sourceTree = "<group>";
+		};
+		6EC230791877144E0010634A /* Graph Representation */ = {
+			isa = PBXGroup;
+			children = (
+				6EC2307A1877145C0010634A /* GraphMatrix */,
+			);
+			name = "Graph Representation";
+			sourceTree = "<group>";
+		};
+		6EC2307A1877145C0010634A /* GraphMatrix */ = {
+			isa = PBXGroup;
+			children = (
+				6EC2307E1877147F0010634A /* GraphCell */,
+				6EC23086187715F10010634A /* SizeEntity */,
+				6EC2307B1877147C0010634A /* Graph.h */,
+				6EC2307C1877147C0010634A /* Graph.m */,
+			);
+			name = GraphMatrix;
+			sourceTree = "<group>";
+		};
+		6EC2307E1877147F0010634A /* GraphCell */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23082187714A00010634A /* PositionEntity */,
+				6EC2307F187714940010634A /* GraphCell.h */,
+				6EC23080187714940010634A /* GraphCell.m */,
+			);
+			name = GraphCell;
+			sourceTree = "<group>";
+		};
+		6EC23082187714A00010634A /* PositionEntity */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23083187714BA0010634A /* PositionEntity.h */,
+				6EC23084187714BA0010634A /* PositionEntity.m */,
+			);
+			name = PositionEntity;
+			sourceTree = "<group>";
+		};
+		6EC23086187715F10010634A /* SizeEntity */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23087187716060010634A /* MSize.h */,
+				6EC23088187716060010634A /* MSize.m */,
+			);
+			name = SizeEntity;
+			sourceTree = "<group>";
+		};
+		6EC2308A1877181F0010634A /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				6EC2308B1877182C0010634A /* Matrix View */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		6EC2308B1877182C0010634A /* Matrix View */ = {
+			isa = PBXGroup;
+			children = (
+				6EC2308F187719550010634A /* CellView */,
+				6EC2308C187719520010634A /* MatrixView.h */,
+				6EC2308D187719520010634A /* MatrixView.m */,
+			);
+			name = "Matrix View";
+			sourceTree = "<group>";
+		};
+		6EC2308F187719550010634A /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23090187719650010634A /* CellView.h */,
+				6EC23091187719650010634A /* CellView.m */,
+			);
+			name = CellView;
+			sourceTree = "<group>";
+		};
+		6EC23093187721090010634A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6E4C01221878A9280072419C /* HelperClasses */,
+				6EC2308A1877181F0010634A /* Custom Views */,
+				6EC23078187714440010634A /* Model Classes */,
+				6EC23073187714090010634A /* Custom View Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		6EC23094187735D40010634A /* Action on Graph */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23095187735F50010634A /* ActionOnGraph.h */,
+				6EC23096187735F50010634A /* ActionOnGraph.m */,
+			);
+			name = "Action on Graph";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EC23040187713F60010634A /* GameOfLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EC2306D187713F70010634A /* Build configuration list for PBXNativeTarget "GameOfLife" */;
+			buildPhases = (
+				6EC2303D187713F60010634A /* Sources */,
+				6EC2303E187713F60010634A /* Frameworks */,
+				6EC2303F187713F60010634A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameOfLife;
+			productName = GameOfLife;
+			productReference = 6EC23041187713F60010634A /* GameOfLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EC2305B187713F70010634A /* GameOfLifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EC23070187713F70010634A /* Build configuration list for PBXNativeTarget "GameOfLifeTests" */;
+			buildPhases = (
+				6EC23058187713F70010634A /* Sources */,
+				6EC23059187713F70010634A /* Frameworks */,
+				6EC2305A187713F70010634A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EC23062187713F70010634A /* PBXTargetDependency */,
+			);
+			name = GameOfLifeTests;
+			productName = GameOfLifeTests;
+			productReference = 6EC2305C187713F70010634A /* GameOfLifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EC23039187713F60010634A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GameOfLife;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Mohammed Eldehairy";
+				TargetAttributes = {
+					6EC2305B187713F70010634A = {
+						TestTargetID = 6EC23040187713F60010634A;
+					};
+				};
+			};
+			buildConfigurationList = 6EC2303C187713F60010634A /* Build configuration list for PBXProject "GameOfLife" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6EC23038187713F60010634A;
+			productRefGroup = 6EC23042187713F60010634A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EC23040187713F60010634A /* GameOfLife */,
+				6EC2305B187713F70010634A /* GameOfLifeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EC2303F187713F60010634A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC2304F187713F60010634A /* InfoPlist.strings in Resources */,
+				6EC23057187713F70010634A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EC2305A187713F70010634A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC23068187713F70010634A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EC2303D187713F60010634A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC2307D1877147C0010634A /* Graph.m in Sources */,
+				6EC23092187719650010634A /* CellView.m in Sources */,
+				6EC23081187714940010634A /* GraphCell.m in Sources */,
+				6EC23077187714370010634A /* GameOfLifeControllerViewController.m in Sources */,
+				6EC23051187713F60010634A /* main.m in Sources */,
+				6EC23097187735F50010634A /* ActionOnGraph.m in Sources */,
+				6EC23055187713F60010634A /* GameOfLifeAppDelegate.m in Sources */,
+				6EC23085187714BA0010634A /* PositionEntity.m in Sources */,
+				6EC23089187716060010634A /* MSize.m in Sources */,
+				6EC2308E187719520010634A /* MatrixView.m in Sources */,
+				6E4C01261878A9530072419C /* AnimatedGifCreator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EC23058187713F70010634A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC2306A187713F70010634A /* GameOfLifeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EC23062187713F70010634A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EC23040187713F60010634A /* GameOfLife */;
+			targetProxy = 6EC23061187713F70010634A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EC2304D187713F60010634A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EC2304E187713F60010634A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6EC23066187713F70010634A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EC23067187713F70010634A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EC2306B187713F70010634A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		6EC2306C187713F70010634A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EC2306E187713F70010634A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameOfLife/GameOfLife-Prefix.pch";
+				INFOPLIST_FILE = "GameOfLife/GameOfLife-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6EC2306F187713F70010634A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameOfLife/GameOfLife-Prefix.pch";
+				INFOPLIST_FILE = "GameOfLife/GameOfLife-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6EC23071187713F70010634A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameOfLife.app/GameOfLife";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameOfLife/GameOfLife-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GameOfLifeTests/GameOfLifeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6EC23072187713F70010634A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameOfLife.app/GameOfLife";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameOfLife/GameOfLife-Prefix.pch";
+				INFOPLIST_FILE = "GameOfLifeTests/GameOfLifeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EC2303C187713F60010634A /* Build configuration list for PBXProject "GameOfLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EC2306B187713F70010634A /* Debug */,
+				6EC2306C187713F70010634A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EC2306D187713F70010634A /* Build configuration list for PBXNativeTarget "GameOfLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EC2306E187713F70010634A /* Debug */,
+				6EC2306F187713F70010634A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EC23070187713F70010634A /* Build configuration list for PBXNativeTarget "GameOfLifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EC23071187713F70010634A /* Debug */,
+				6EC23072187713F70010634A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EC23039187713F60010634A /* Project object */;
+}
